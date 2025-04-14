@@ -17,6 +17,7 @@ import DCCircuitCalculator from "./components/DCCircuitCalculator";
 import ColorCodeCalculator from "./components/ColorCodeCalculator";
 import CapacitorCalculator from "./components/CapacitorCalculator";
 import InductorCalculator from "./components/InductorCalculator";
+import ResonanceCalculator from "./components/ResonanceCalculator";
 
 const queryClient = new QueryClient();
 
@@ -38,6 +39,7 @@ const App = () => (
           <Route path="/color-code" element={<ColorCodeCalculator />} />
           <Route path="/capacitor" element={<CapacitorCalculator />} />
           <Route path="/inductor" element={<InductorCalculator />} />
+          <Route path="/resonance" element={<ResonanceCalculator />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

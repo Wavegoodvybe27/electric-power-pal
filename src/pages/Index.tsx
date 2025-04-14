@@ -1,7 +1,7 @@
 
 import React from 'react';
 import CalculatorCard from '@/components/CalculatorCard';
-import { Battery, Bolt, Cable, Calculator, Gauge, PlugZap, Zap, CircuitBoard, FlaskConical, Cpu, Layers, Lightbulb } from 'lucide-react';
+import { Battery, Bolt, Cable, Calculator, Gauge, PlugZap, Zap, CircuitBoard, FlaskConical, Cpu, Layers, Lightbulb, Waves } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -85,6 +85,13 @@ const Index = () => {
             description="Calculate inductance, reactance, impedance, and energy storage in inductors."
             icon={Cpu}
             path="/inductor"
+          />
+          
+          <CalculatorCard 
+            title="Resonance Calculator" 
+            description="Calculate resonant frequency, bandwidth, and impedance for LC circuits."
+            icon={Waves}
+            path="/resonance"
           />
           
           <CalculatorCard 
