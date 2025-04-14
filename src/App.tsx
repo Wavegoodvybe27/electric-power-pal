@@ -12,6 +12,11 @@ import WireSizeCalculator from "./components/WireSizeCalculator";
 import VoltageDropCalculator from "./components/VoltageDropCalculator";
 import PowerFactorCalculator from "./components/PowerFactorCalculator";
 import UnitConverter from "./components/UnitConverter";
+import ACCircuitCalculator from "./components/ACCircuitCalculator";
+import DCCircuitCalculator from "./components/DCCircuitCalculator";
+import ColorCodeCalculator from "./components/ColorCodeCalculator";
+import CapacitorCalculator from "./components/CapacitorCalculator";
+import InductorCalculator from "./components/InductorCalculator";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +33,11 @@ const App = () => (
           <Route path="/voltage-drop" element={<VoltageDropCalculator />} />
           <Route path="/power-factor" element={<PowerFactorCalculator />} />
           <Route path="/unit-converter" element={<UnitConverter />} />
+          <Route path="/ac-circuit" element={<ACCircuitCalculator />} />
+          <Route path="/dc-circuit" element={<DCCircuitCalculator />} />
+          <Route path="/color-code" element={<ColorCodeCalculator />} />
+          <Route path="/capacitor" element={<CapacitorCalculator />} />
+          <Route path="/inductor" element={<InductorCalculator />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

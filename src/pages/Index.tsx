@@ -1,7 +1,7 @@
 
 import React from 'react';
 import CalculatorCard from '@/components/CalculatorCard';
-import { Battery, Bolt, Cable, Calculator, Gauge, PlugZap, Zap } from 'lucide-react';
+import { Battery, Bolt, Cable, Calculator, Gauge, PlugZap, Zap, CircuitBoard, FlaskConical, Cpu, Layers, Lightbulb } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -15,7 +15,7 @@ const Index = () => {
           <p className="mt-4 text-primary-foreground/90 max-w-xl">
             Professional-grade calculators for electrical calculations. 
             Simplify your electrical work with accurate calculations for Ohm's Law, 
-            wire sizing, voltage drop, and more.
+            wire sizing, voltage drop, AC/DC circuits, component values, and more.
           </p>
         </div>
       </header>
@@ -50,6 +50,41 @@ const Index = () => {
             description="Calculate and analyze power factor in AC electrical systems."
             icon={Gauge}
             path="/power-factor"
+          />
+          
+          <CalculatorCard 
+            title="AC Circuit Calculator" 
+            description="Calculate impedance, phase angle, and power in AC circuits with resistors, capacitors, and inductors."
+            icon={CircuitBoard}
+            path="/ac-circuit"
+          />
+          
+          <CalculatorCard 
+            title="DC Circuit Calculator" 
+            description="Analyze series, parallel, and complex DC circuits with multiple power sources."
+            icon={Battery}
+            path="/dc-circuit"
+          />
+          
+          <CalculatorCard 
+            title="Color Code Calculator" 
+            description="Decode and encode resistor, inductor, and capacitor color bands."
+            icon={Lightbulb}
+            path="/color-code"
+          />
+          
+          <CalculatorCard 
+            title="Capacitor Calculator" 
+            description="Calculate capacitance, reactance, impedance, and energy storage in capacitors."
+            icon={FlaskConical}
+            path="/capacitor"
+          />
+          
+          <CalculatorCard 
+            title="Inductor Calculator" 
+            description="Calculate inductance, reactance, impedance, and energy storage in inductors."
+            icon={Cpu}
+            path="/inductor"
           />
           
           <CalculatorCard 
