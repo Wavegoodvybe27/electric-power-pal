@@ -1,7 +1,7 @@
 
 import React from 'react';
 import CalculatorCard from '@/components/CalculatorCard';
-import { Battery, Bolt, Cable, Calculator, Gauge, PlugZap, Zap, CircuitBoard, FlaskConical, Cpu, Layers, Lightbulb, Waves } from 'lucide-react';
+import { Battery, Bolt, Cable, Calculator, Gauge, PlugZap, Zap, CircuitBoard, FlaskConical, Cpu, Layers, Lightbulb, Waves, ShieldCheck } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -92,6 +92,13 @@ const Index = () => {
             description="Calculate resonant frequency, bandwidth, and impedance for LC circuits."
             icon={Waves}
             path="/resonance"
+          />
+          
+          <CalculatorCard 
+            title="Safety Calculator" 
+            description="Calculate GFCI trip time, arc flash energy, touch potential, and safe disconnection time."
+            icon={ShieldCheck}
+            path="/safety"
           />
           
           <CalculatorCard 
